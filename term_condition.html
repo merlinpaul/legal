@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use - Trading AI</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --surface: #111111;
+      --border: #1c1c1e;
+      --text-primary: #f5f5f7;
+      --text-secondary: #a1a1a6;
+      --text-tertiary: #636366;
+      --divider: #1c1c1e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: -apple-system, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 72px 24px 96px;
+    }
+
+    .doc-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.022em;
+      line-height: 1.05;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .doc-date {
+      font-size: 14px;
+      color: var(--text-tertiary);
+      margin-bottom: 36px;
+    }
+
+    /* Intro block - same style as Apple: dense prose, no border */
+    .doc-intro {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 0;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--divider);
+    }
+    .doc-intro + .doc-intro {
+      border-bottom: none;
+      padding-top: 14px;
+    }
+
+    /*
+      Apple EULA clause structure:
+      Each clause is a paragraph that begins with the letter identifier inline.
+      No h2, no separate label - just "a. Title: body text..."
+    */
+    .clause-block {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--divider);
+    }
+    .clause-block:last-of-type {
+      border-bottom: none;
+    }
+
+    /* The clause paragraph itself - letter + title + body all inline */
+    .clause-p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+    .clause-p:last-child { margin-bottom: 0; }
+
+    /* Inline clause identifier: "a." bold, same color as body */
+    .clause-id {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* Inline clause title: "Scope of License:" */
+    .clause-title {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* ALL CAPS block - Apple style: NO box, NO border, just uppercase prose */
+    .caps-block {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      margin-bottom: 12px;
+    }
+    .caps-block:last-child { margin-bottom: 0; }
+
+    /* Sub-items within a clause (subscriptions breakdown etc.) */
+    .sub-item {
+      margin: 10px 0 10px 0;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .sub-item-label {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* Notice - only used for the financial disclaimer (not warranty/liability) */
+    .notice {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 14px 0;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .notice strong { color: var(--text-primary); font-weight: 600; }
+
+    ul {
+      list-style: none;
+      margin: 10px 0;
+      padding: 0;
+    }
+    ul li {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      padding: 3px 0 3px 14px;
+      position: relative;
+    }
+    ul li::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: var(--text-tertiary);
+    }
+
+    .contact-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 14px;
+    }
+    .contact-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 6px;
+    }
+    .contact-wrap a {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    .contact-wrap a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--divider);
+    }
+    footer p {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .page { padding: 48px 20px 72px; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-eyebrow">Trading AI</div>
+  <h1>Terms of Use</h1>
+  <p class="doc-date">Updated May 30, 2026</p>
+
+  <p class="doc-intro">These Terms of Use govern your access to and use of <strong style="color: var(--text-primary);">Trading AI</strong>, an AI-powered mobile application available on the Apple App Store. By downloading, installing, or using the App, you agree to be legally bound by these Terms. If you do not agree, do not download, install, or use the App.</p>
+
+  <p class="doc-intro" style="border-bottom: 1px solid var(--divider); padding-top: 14px;">Apps made available through the App Store are licensed, not sold, to you. Your license to each App is subject to your prior acceptance of these Terms of Use. <strong style="color: var(--text-primary);">Apple Inc. is not a party to these Terms.</strong> Apple and its subsidiaries are third-party beneficiaries of these Terms and, upon your acceptance, have the right to enforce them against you as third-party beneficiaries. Mandatory statutory rights under the laws of your country of residence are not excluded or limited by these Terms.</p>
+
+
+  <!-- a. Service Description -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">a.</span> <span class="clause-title">Service Description.</span> Trading AI is an artificial intelligence-powered mobile application that analyzes financial market charts provided by the user and generates automated analytical commentary based on pattern recognition. The App is designed and intended exclusively for informational and educational purposes. It does not execute trades, manage assets, provide personalized financial advice, or connect to any brokerage or financial account. It is not a financial services platform, a regulated investment advisory service, or a trading execution tool. Data displayed by the App, including financial information, is for general informational purposes only and is not guaranteed by Trading AI or its agents.</p>
+  </div>
+
+  <!-- b. Eligibility -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">b.</span> <span class="clause-title">Eligibility.</span> By using the App, you represent and warrant that you are at least 16 years of age, or such higher minimum age as required for digital consent or contractual capacity in your jurisdiction; that you have the full legal capacity to enter into binding agreements under applicable law; that your use of the App does not violate any applicable law or regulation in your country of residence; and that you are not a person or entity subject to trade or economic sanctions by any government or international authority. If you are between 16 and 18 years of age, you confirm that you have obtained the consent of a parent or legal guardian to use the App.</p>
+  </div>
+
+  <!-- c. Scope of License -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">c.</span> <span class="clause-title">Scope of License.</span> Trading AI grants to you a limited, non-exclusive, non-transferable, revocable license to use the App on any Apple-branded devices that you own or control, solely for your personal, non-commercial purposes, in accordance with these Terms. You may not distribute or make the App available over a network where it could be used by multiple devices at the same time. You may not transfer, redistribute, or sublicense the App. You may not copy, reverse-engineer, decompile, disassemble, attempt to derive the source code of, modify, or create derivative works of the App, any updates, or any part thereof, except as and only to the extent that any foregoing restriction is prohibited by applicable law. You may not use any AI-generated output of the App as training data for any machine learning or artificial intelligence system. All rights not expressly granted are reserved by Trading AI.</p>
+  </div>
+
+  <!-- d. Consent to Use of Data -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">d.</span> <span class="clause-title">Consent to Use of Data.</span> You agree that Trading AI may collect and use technical data and related information, including technical information about your device, system and application software, and network, gathered periodically to facilitate the provision of software updates, product support, and other services related to the App. Trading AI may use this information, as long as it is in a form that does not personally identify you, to improve its products or to provide services to you.</p>
+    <p class="clause-p">Chart images you submit for analysis are transmitted to third-party AI systems to generate the analysis you requested. In accordance with Apple App Store Review Guideline 5.1.2(i), revised November 13, 2025, we explicitly disclose this. By actively submitting an image for analysis, you provide explicit consent to this transmission. Images are used exclusively to generate the output you requested and are never used to train any AI model. You may withdraw consent at any time by ceasing to use the analysis feature.</p>
+  </div>
+
+  <!-- e. User Responsibilities -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">e.</span> <span class="clause-title">User Responsibilities.</span> You agree to use the App lawfully and in compliance with these Terms. You may not attempt to reverse engineer or extract source code from the App; use bots or automated systems to access the App; disrupt or interfere with the App's servers or security systems; upload content that is illegal, harmful, or violates third-party rights; represent the App's AI-generated outputs as professional financial advice to any third party; use the App in connection with any activity that violates applicable securities laws or financial regulations in any jurisdiction; share your subscription access with any unauthorized third party; or circumvent any access controls, subscription verification, or usage limits. Violation of any of these responsibilities may result in immediate suspension or permanent termination of your access without notice.</p>
+  </div>
+
+  <!-- f. AI-Generated Content -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">f.</span> <span class="clause-title">AI-Generated Content.</span> All analytical outputs generated by the App are produced by artificial intelligence systems operating on the basis of statistical pattern recognition applied to the chart images you submit. You expressly acknowledge that AI-generated content may contain errors, inaccuracies, or omissions; that the accuracy or completeness of any generated insight cannot be guaranteed; that AI analysis does not account for macroeconomic conditions, geopolitical events, regulatory changes, or any factor not visible in the submitted image; and that historical patterns identified by AI are not indicative of future market behavior or price movements.</p>
+  </div>
+
+  <!-- g. No Financial Advice -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">g.</span> <span class="clause-title">No Financial Advice.</span> Trading AI does not provide financial, investment, trading, tax, or legal advice of any kind. Nothing within the App constitutes a recommendation, solicitation, or offer to buy, sell, hold, or otherwise transact in any financial instrument, security, derivative, cryptocurrency, commodity, or asset of any kind, in any jurisdiction.</p>
+    <p class="clause-p">The App is not registered as an investment advisor, broker-dealer, financial planner, portfolio manager, or any other type of regulated financial services provider in any jurisdiction worldwide. No regulatory authority has reviewed or approved the App's analytical outputs. Past performance identified in chart analysis is not indicative of future results. All financial markets involve the risk of substantial loss, including the total loss of invested capital. Leveraged instruments may result in losses exceeding the initial investment. Users are strongly advised to consult a licensed and regulated financial professional before making any investment or trading decision. All trading and investment decisions are made solely at your own risk. We accept no responsibility for any financial loss arising from your use of or reliance on the App.</p>
+  </div>
+
+  <!-- h. NO WARRANTY - Apple EULA exact style: all caps, inline, no box -->
+  <div class="clause-block">
+    <p class="caps-block"><span class="clause-id" style="text-transform: none;">h.</span> NO WARRANTY: YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE APP IS AT YOUR SOLE RISK. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP AND ANY SERVICES PERFORMED OR PROVIDED BY THE APP ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND TRADING AI HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE APP AND ANY SERVICES, EITHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD-PARTY RIGHTS. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY TRADING AI OR ANY AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE APP OR SERVICES PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR, OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.</p>
+  </div>
+
+  <!-- i. Limitation of Liability - Apple EULA exact style: all caps, inline, no box -->
+  <div class="clause-block">
+    <p class="caps-block"><span class="clause-id" style="text-transform: none;">i.</span> LIMITATION OF LIABILITY: TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL TRADING AI BE LIABLE FOR PERSONAL INJURY OR ANY INCIDENTAL, SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION DAMAGES FOR FINANCIAL LOSS, TRADING LOSS, LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION, OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, OR OTHERWISE), AND EVEN IF TRADING AI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU.</p>
+    <p class="clause-p">Nothing in these Terms excludes or limits liability that cannot be lawfully excluded or limited under applicable mandatory consumer protection law in your country of residence.</p>
+  </div>
+
+  <!-- j. Subscriptions and In-App Purchases -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">j.</span> <span class="clause-title">Subscriptions and In-App Purchases.</span> Access to premium features of the App is available through auto-renewable subscriptions and in-app purchases processed exclusively through Apple's App Store, in accordance with Apple's Schedule 2 and applicable App Store policies. The App uses Apple's In-App Purchase system exclusively. Trading AI does not process or store payment card information.</p>
+    <div class="sub-item"><span class="sub-item-label">Automatic renewal.</span> Subscriptions automatically renew at the end of each billing period at the then-current price unless cancelled at least 24 hours before the end of the current period.</div>
+    <div class="sub-item"><span class="sub-item-label">Billing.</span> Payment is charged to your Apple ID account upon confirmation of purchase and at the start of each renewal period.</div>
+    <div class="sub-item"><span class="sub-item-label">Cancellation.</span> You may cancel or manage your subscription at any time through your Apple ID account settings, under Subscriptions. Cancellation takes effect at the end of the current billing period; you retain access until that date.</div>
+    <div class="sub-item"><span class="sub-item-label">Free trials.</span> If a free trial is offered, unused trial time is forfeited upon purchase of a paid subscription before the trial period ends.</div>
+    <div class="sub-item"><span class="sub-item-label">Price changes.</span> We may change subscription prices at any time. Where required by applicable law or Apple's policies, existing subscribers will be notified and given the opportunity to consent before any price increase takes effect on their subscription.</div>
+    <div class="sub-item"><span class="sub-item-label">Refunds.</span> All refund requests are processed exclusively by Apple. To request a refund, visit reportaproblem.apple.com.</div>
+    <div class="sub-item"><span class="sub-item-label">Consumable credits.</span> Consumable in-app purchase credits are non-refundable once consumed and do not carry over between billing periods unless otherwise stated at the time of purchase.</div>
+    <p class="clause-p" style="margin-top: 12px;">Applicable statutory consumer rights in your jurisdiction, including any right of withdrawal or cooling-off period required by local law, are not excluded by these Terms.</p>
+  </div>
+
+  <!-- k. Maintenance and Support -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">k.</span> <span class="clause-title">Maintenance and Support.</span> As between Apple and Trading AI, Trading AI is solely responsible for providing maintenance and support services for the App, whether or not required under applicable law. Apple has no obligation whatsoever to provide any maintenance or support services with respect to the App. We make reasonable efforts to maintain continuous availability of the App but do not guarantee uninterrupted or error-free access. We reserve the right to update, modify, suspend, or discontinue any feature or the entire service, with reasonable notice where practicable, without liability to you.</p>
+  </div>
+
+  <!-- l. Third-Party Claims -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">l.</span> <span class="clause-title">Third-Party Claims.</span> In the event of any third-party claim that the App or your possession and use of the App infringes a third party's intellectual property rights, Trading AI, not Apple, is solely responsible for the investigation, defense, settlement, and discharge of any such claim. Trading AI, not Apple, is responsible for addressing any claims relating to the App, including product liability claims, claims that the App fails to conform to applicable legal or regulatory standards, and claims arising under consumer protection, privacy, or similar legislation in any jurisdiction. Apple has no warranty obligation with respect to the App beyond its Standard EULA obligation to refund the purchase price if the App fails to conform to any applicable warranty.</p>
+  </div>
+
+  <!-- m. Termination -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">m.</span> <span class="clause-title">Termination.</span> These Terms are effective until terminated by you or by Trading AI. Your rights under these Terms will terminate automatically if you fail to comply with any of their provisions. We reserve the right to suspend or terminate your access if your conduct is determined to be harmful to the App, other users, or third parties; if you engage in fraudulent or illegal behavior in connection with the App; or if we are required to do so by applicable law or a competent authority. Upon termination, your license to use the App ceases immediately. Sections f, g, h, i, l, n, and o survive termination and remain in full force.</p>
+  </div>
+
+  <!-- n. Governing Law -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">n.</span> <span class="clause-title">Governing Law and Dispute Resolution.</span> We do not designate a single mandatory governing jurisdiction in order to preserve the mandatory consumer protection rights of users worldwide. Where mandatory local law applies, it prevails over any conflicting provision of these Terms. Specifically excluded from application to these Terms is the United Nations Convention on the International Sale of Goods.</p>
+    <p class="clause-p">In the event of any dispute, the parties agree to first attempt resolution through good-faith negotiation for 30 days following written notice. If unresolved, users in the European Union may bring proceedings before the courts of their country of domicile and access the European Commission's Online Dispute Resolution platform at ec.europa.eu/consumers/odr. Users in other jurisdictions may seek resolution through competent courts or alternative dispute resolution mechanisms available in their country of residence. Nothing in this section prevents either party from seeking urgent injunctive or interim relief from a competent court.</p>
+  </div>
+
+  <!-- o. Export Compliance -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">o.</span> <span class="clause-title">Export Compliance.</span> You may not use or otherwise export or re-export the App except as authorized by the laws of the jurisdiction in which the App was obtained. In particular, the App may not be exported or re-exported into any country subject to a U.S. embargo, or to anyone on the U.S. Treasury Department's Specially Designated Nationals List or the U.S. Department of Commerce Denied Persons List or Entity List. By using the App, you represent and warrant that you are not located in any such country or on any such list.</p>
+  </div>
+
+  <!-- p. Changes to These Terms -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">p.</span> <span class="clause-title">Changes to These Terms.</span> These Terms of Use may be updated periodically. When we make material changes, we will update the effective date and notify you through an in-app notice or other appropriate means before the changes take effect. Where required by applicable consumer protection law, material changes will not take effect without your affirmative acceptance. If you do not agree to revised Terms, you must discontinue use of the App and cancel your subscription through your Apple ID account settings before the changes take effect.</p>
+  </div>
+
+  <!-- q. Contact -->
+  <div class="clause-block">
+    <p class="clause-p"><span class="clause-id">q.</span> <span class="clause-title">Contact.</span> For any questions or concerns relating to these Terms of Use, please contact us. For subscription and billing issues, please contact Apple directly at reportaproblem.apple.com.</p>
+    <div class="contact-wrap">
+      <div class="contact-label">Email</div>
+      <a href="mailto:contact.tradingai@icloud.com">contact.tradingai@icloud.com</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright 2026 Trading AI. All rights reserved.</p>
+    <p>These Terms of Use apply worldwide. Mandatory statutory rights in your country of residence are not excluded.</p>
+    <p style="margin-top: 8px;">Apple, iPhone, and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
+  </footer>
+
+</div>
+</body>
+</html>
