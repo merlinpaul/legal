@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Support - Trading AI</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #F2F2F7;
+      --text-primary: #000000;
+      --text-secondary: rgba(60, 60, 67, 0.60);
+      --text-tertiary: rgba(60, 60, 67, 0.30);
+      --separator: rgba(60, 60, 67, 0.29);
+      --link: #007AFF;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --text-primary: #FFFFFF;
+        --text-secondary: rgba(235, 235, 245, 0.60);
+        --text-tertiary: rgba(235, 235, 245, 0.30);
+        --separator: rgba(84, 84, 88, 0.60);
+        --link: #0A84FF;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 72px 28px 112px;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 48px 20px 88px; }
+    }
+
+    /* Header */
+    .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.022em;
+      line-height: 1.1;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+
+    .doc-date {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+
+    .doc-intro {
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--separator);
+      margin-bottom: 0;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid var(--separator);
+    }
+
+    section:last-of-type { border-bottom: none; }
+
+    h2 {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+    }
+
+    p {
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    p strong { color: var(--text-primary); font-weight: 600; }
+
+    ul { list-style: none; padding: 0; margin: 14px 0; }
+    ul li {
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      padding: 6px 0 6px 18px;
+      position: relative;
+    }
+    ul li::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: var(--text-tertiary);
+    }
+    ul li strong { color: var(--text-primary); font-weight: 600; }
+
+    /* Rights rows */
+    .rights-item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--separator);
+    }
+    .rights-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .rights-item:first-child { padding-top: 0; }
+    .rights-name {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 3px;
+    }
+    .rights-desc {
+      font-size: 0.875rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--separator);
+    }
+    footer p {
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      body { background: white; color: black; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <p class="eyebrow">Trading AI</p>
+  <h1>Support</h1>
+  <p class="doc-date">Updated June 1, 2026</p>
+
+  <p class="doc-intro">Welcome to Trading AI Support. This page answers the most common questions about using the App, getting the most accurate analysis from your charts, and managing your subscription. Most answers are below. If you cannot find what you need, you can reach us directly at the email address at the bottom of this page, and we will respond as quickly as possible.</p>
+
+  <section>
+    <h2>Getting Started</h2>
+    <p>Trading AI turns a chart photo or screenshot into a clear, structured technical analysis in seconds. To run your first analysis:</p>
+    <ul>
+      <li>Open Trading AI and tap the camera button to scan a chart, or tap the gallery button to upload a screenshot.</li>
+      <li>Frame or select a chart that shows the full price action, including the price axis and the time scale.</li>
+      <li>Confirm the image, and Trading AI generates your analysis in a few seconds.</li>
+      <li>Review the structured breakdown, then save it or return to it later from your history.</li>
+    </ul>
+    <p>An internet connection via Wi-Fi or cellular is required to generate an analysis.</p>
+  </section>
+
+  <section>
+    <h2>How to Analyze a Chart</h2>
+    <p>You can analyze a chart in two ways. <strong>Scan with the camera</strong> to capture a chart shown on another screen or device. <strong>Upload from your photo library</strong> to analyze a screenshot you already saved. Both methods produce the same structured analysis.</p>
+    <p>Trading AI reads the chart exactly as you submit it. It does not crop, recolor, or alter your image, so the quality and framing of what you submit directly affect the depth of the analysis.</p>
+  </section>
+
+  <section>
+    <h2>Getting the Best Results</h2>
+    <p>For the most accurate and detailed analysis, follow these guidelines:</p>
+    <ul>
+      <li>Capture the full chart, including the price axis and the time scale.</li>
+      <li>Avoid cropping or zooming into a single candle or a small section of the chart.</li>
+      <li>Use a clear, high-resolution image. Blurry or low-quality screenshots reduce detail.</li>
+      <li>Keep relevant indicators visible if you want them factored into the analysis.</li>
+      <li>The more genuine detail the chart shows, the deeper and more confident the analysis will be. Sparse charts produce a shorter, more cautious read.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Understanding Your Analysis</h2>
+    <p>Each analysis is organized so you can move from context to a clear plan. Depending on what the chart shows, it may include:</p>
+    <ul>
+      <li><strong>Trend direction and momentum:</strong> the overall market bias and the strength behind the current move.</li>
+      <li><strong>Key levels:</strong> the support and resistance zones where price is most likely to react.</li>
+      <li><strong>Volume and market context:</strong> additional context that frames the current price action.</li>
+      <li><strong>Patterns and setups:</strong> candlestick behavior, breakout structures, and actionable technical setups.</li>
+      <li><strong>Trade plan:</strong> entry zones, confirmation logic, take-profit targets, stop-loss levels, and a clearer risk-to-reward framework.</li>
+    </ul>
+    <p>The analysis is informational output only and does not constitute financial, investment, or trading advice.</p>
+  </section>
+
+  <section>
+    <h2>Subscriptions and Credits</h2>
+    <p>Trading AI offers a free monthly allowance of analyses so you can try the App. To unlock advanced technical analysis with a higher monthly allowance, you can subscribe to a <strong>monthly</strong> or <strong>yearly</strong> plan.</p>
+    <p>If you reach your plan's limit, you can buy additional analyses as one-time purchases. These credits never expire, so any analyses you purchase remain available until you use them.</p>
+    <p>Payment is charged to your Apple Account at confirmation of purchase. Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the end of the current period, and your account is charged for renewal within 24 hours prior to the end of the current period.</p>
+  </section>
+
+  <section>
+    <h2>Managing or Canceling Your Subscription</h2>
+    <p>You manage everything related to billing directly in your Apple Account, the same way as any other App Store subscription:</p>
+    <ul>
+      <li>Open the Settings app on your iPhone and tap your name at the top.</li>
+      <li>Tap <strong>Subscriptions</strong>, then select <strong>Trading AI</strong>.</li>
+      <li>Choose a different plan, or tap <strong>Cancel Subscription</strong> to stop future renewals.</li>
+    </ul>
+    <p>Canceling stops the next renewal. You keep access until the end of the period you already paid for. To move a subscription or restore credits to a new device, open Trading AI and use <strong>Restore Purchases</strong> while signed in with the same Apple Account used for the original purchase.</p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <ul>
+      <li class="rights-item">
+        <p class="rights-name">Is Trading AI financial advice?</p>
+        <p class="rights-desc">No. Trading AI provides AI-generated technical analysis for informational and educational purposes only. It does not provide financial, investment, or trading advice.</p>
+      </li>
+      <li class="rights-item">
+        <p class="rights-name">Are my chart images stored?</p>
+        <p class="rights-desc">No. Images are processed in real time only to generate your analysis. They are not retained beyond the analysis session and are never used to train any AI model.</p>
+      </li>
+      <li class="rights-item">
+        <p class="rights-name">Which markets can I analyze?</p>
+        <p class="rights-desc">Any chart you submit, including stocks, forex, crypto, indices, and commodities. Trading AI analyzes the chart itself, not a specific market.</p>
+      </li>
+      <li class="rights-item">
+        <p class="rights-name">Do my purchased credits expire?</p>
+        <p class="rights-desc">No. Credits are one-time purchases that never expire and remain available until you use them.</p>
+      </li>
+      <li class="rights-item">
+        <p class="rights-name">Can I use Trading AI offline?</p>
+        <p class="rights-desc">No. An internet connection via Wi-Fi or cellular is required to generate an analysis.</p>
+      </li>
+      <li class="rights-item">
+        <p class="rights-name">Why was my image not recognized as a chart?</p>
+        <p class="rights-desc">Trading AI only analyzes financial market charts. If the image does not clearly show a chart, submit a clearer capture that includes the full price action, the price axis, and the time scale.</p>
+      </li>
+      <li class="rights-item">
+        <p class="rights-name">Why is one analysis shorter than another?</p>
+        <p class="rights-desc">The analysis adapts to how much the chart actually shows. A detailed chart produces a deeper read, while a sparse or low-detail chart produces a shorter, more cautious one. Trading AI never invents levels that are not visible.</p>
+      </li>
+      <li class="rights-item">
+        <p class="rights-name">What languages does the App support?</p>
+        <p class="rights-desc">Trading AI is available in 13 languages, including English, French, Spanish, Portuguese, German, Italian, Dutch, Swedish, Polish, Traditional Chinese, Japanese, Korean, and Hindi.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li><strong>An analysis will not generate:</strong> check that you have an active Wi-Fi or cellular connection, then try again. If the issue persists, close and reopen the App.</li>
+      <li><strong>The image is not recognized as a chart:</strong> submit a clearer capture that shows the full chart, including the price axis and the time scale, and avoid zooming into a single candle.</li>
+      <li><strong>A purchase did not unlock:</strong> open Trading AI, use Restore Purchases, and confirm you are signed in with the Apple Account used for the original purchase.</li>
+      <li><strong>The App is slow or unexpectedly closes:</strong> make sure you are running the latest version from the App Store, then restart your device and try again.</li>
+    </ul>
+    <p>If a problem continues after these steps, contact us using the email below and include your device model and iOS version so we can help faster.</p>
+  </section>
+
+  <section>
+    <h2>System Requirements</h2>
+    <ul>
+      <li>iOS device running iOS 17.0 or later.</li>
+      <li>An internet connection via Wi-Fi or cellular to generate an analysis.</li>
+      <li>Results may vary depending on chart quality and the level of detail visible in the image.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Privacy and Your Data</h2>
+    <p>We collect only the data needed to run the App. Chart images are processed in real time to generate your analysis, are not retained beyond the analysis session, and are never sold or used for advertising. For full details on what we collect, how we use it, and your privacy rights, please read our <a href="privacy_policy.html">Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2>Financial Disclaimer</h2>
+    <p><strong>Trading AI provides AI-generated market analysis for informational and educational purposes only.</strong> The App is not a regulated financial service. Nothing within the App constitutes financial advice, investment advice, trading advice, or any recommendation to buy, sell, or hold any financial instrument, security, currency, or asset of any kind in any jurisdiction.</p>
+    <p>Past market patterns identified by AI analysis are not indicative of future results. All trading and investment activities involve risk, including the possible loss of capital. Users are solely and exclusively responsible for their trading decisions and any resulting financial outcomes. If you require financial advice, please consult a licensed and qualified financial advisor registered with the relevant regulatory authority in your jurisdiction.</p>
+  </section>
+
+  <section>
+    <h2>How to Contact Us</h2>
+    <p>For any question, feedback, or support request regarding Trading AI, please contact us at <a href="mailto:contact.tradingai@icloud.com">contact.tradingai@icloud.com</a>. We will respond to all legitimate requests as quickly as possible.</p>
+  </section>
+
+  <footer>
+    <p>Copyright 2026 Trading AI. All rights reserved.</p>
+    <p>For informational purposes only. Trading AI does not provide financial advice.</p>
+  </footer>
+
+</main>
+</body>
+</html>
